@@ -88,8 +88,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 return
             }
             UIView.animate(withDuration: 0.3, animations: {
-                // scroll to the position above keyboard 10 points
-                self.scrollView.contentOffset = CGPoint(x: (self.lastOffset?.x)!, y: collapseSpace)
+                //Your scrollview will scroll to 5 coordinates above the keyboard
+                self.scrollView.contentOffset = CGPoint(x: (self.lastOffset?.x)!, y: collapseSpace + 5)
             })
         }
     }
